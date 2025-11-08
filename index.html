@@ -1,0 +1,2655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La5fitness Center - Premium Fitness. Elevated Lifestyle.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Ultra-Premium Color Palette - ULTRA REFINED */
+            --black-ultra-deep: #050505;
+            --black-deep: #0a0a0a;
+            --black-charcoal: #0f0f0f;
+            --navy-ultra-deep: #0d1117;
+            --navy-deep: #1a1f3a;
+            --charcoal-deep: #1a1a1a;
+            
+            /* Deep Gold Shades - ULTRA REFINED */
+            --gold-deep: #8b7500;
+            --gold-refined: #7d6b0f;
+            --gold-elegant: #9d8e1f;
+            --bronze-warm: #8b6f47;
+            --bronze-elegant: #a0826d;
+            --champagne-soft: #c9a961;
+            --champagne-muted: #b8a588;
+            --rose-gold: #a87d7d;
+            --copper-deep: #8b5a3c;
+            
+            /* Refined Text Colors - ULTRA LUXURY */
+            --cream-refined: #f5f1de;
+            --silk-white: #faf8f3;
+            --off-white-elegant: #efefef;
+            --champagne-text: #d4af37;
+            --bronze-text: #8b6f47;
+            
+            /* Premium Transitions - ULTRA SMOOTH */
+            --transition-ultra: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-elegant: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.8;
+            color: var(--cream-refined);
+            background: linear-gradient(135deg, var(--black-ultra-deep) 0%, var(--black-deep) 20%, var(--navy-ultra-deep) 60%, var(--navy-deep) 100%);
+            background-attachment: fixed;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at 20% 20%, rgba(139, 117, 0, 0.05) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(139, 117, 0, 0.04) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(139, 117, 0, 0.025) 0%, transparent 70%),
+                radial-gradient(circle at 30% 60%, rgba(157, 142, 31, 0.02) 0%, transparent 60%);
+            pointer-events: none;
+            z-index: 0;
+            animation: subtleGlow 20s ease-in-out infinite alternate;
+        }
+        
+        @keyframes subtleGlow {
+            0% { 
+                opacity: 0.6; 
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.85;
+                transform: scale(1.01);
+            }
+            100% { 
+                opacity: 0.7;
+                transform: scale(1);
+            }
+        }
+
+        /* Navigation - Ultra-Premium Enhanced */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(5, 5, 5, 0.98);
+            backdrop-filter: blur(50px) saturate(220%);
+            padding: 1.8rem 4rem;
+            z-index: 1000;
+            box-shadow: 
+                0 12px 70px rgba(0, 0, 0, 0.97),
+                0 4px 30px rgba(139, 117, 0, 0.2),
+                0 2px 15px rgba(0, 0, 0, 0.9),
+                inset 0 -1px 0 rgba(139, 117, 0, 0.15);
+            border-bottom: 1px solid rgba(139, 117, 0, 0.3);
+            transition: var(--transition-ultra);
+        }
+        
+        nav::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(139, 117, 0, 0.5) 50%, transparent);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        nav:hover::after {
+            opacity: 1;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--cream-refined);
+            text-decoration: none;
+            letter-spacing: 3px;
+            text-shadow: 
+                0 4px 30px rgba(139, 117, 0, 0.4),
+                0 2px 20px rgba(139, 117, 0, 0.2),
+                0 0 40px rgba(139, 117, 0, 0.1);
+            transition: var(--transition-elegant);
+        }
+        
+        .logo:hover {
+            text-shadow: 
+                0 6px 40px rgba(139, 117, 0, 0.6),
+                0 3px 25px rgba(139, 117, 0, 0.35),
+                0 0 50px rgba(139, 117, 0, 0.2);
+        }
+
+        .logo span {
+            color: var(--gold-deep);
+            font-weight: 900;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--off-white);
+            text-decoration: none;
+            transition: var(--transition-elegant);
+            font-weight: 500;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 5px;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold-deep), transparent);
+            box-shadow: 0 0 10px rgba(139, 117, 0, 0.4);
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--gold-deep);
+            text-shadow: 0 0 20px rgba(139, 117, 0, 0.3);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .hamburger span {
+            width: 30px;
+            height: 2.5px;
+            background: var(--gold-deep);
+            box-shadow: 0 0 10px rgba(139, 117, 0, 0.4);
+            transition: var(--transition-smooth);
+        }
+
+        /* Hero Section - Ultra-Luxury Enhanced */
+        .hero {
+            margin-top: 80px;
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(5, 5, 5, 0.99) 0%, rgba(10, 10, 10, 0.98) 30%, rgba(13, 17, 23, 0.97) 70%, rgba(26, 31, 58, 0.96) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at 30% 20%, rgba(139, 117, 0, 0.08) 0%, transparent 40%),
+                radial-gradient(ellipse at 70% 80%, rgba(139, 111, 71, 0.06) 0%, transparent 45%),
+                radial-gradient(circle at 50% 50%, rgba(157, 142, 31, 0.04) 0%, transparent 60%);
+            animation: premiumPulse 12s ease-in-out infinite alternate;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        @keyframes premiumPulse {
+            0% { 
+                opacity: 0.3;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.6;
+                transform: scale(1.02);
+            }
+            100% { 
+                opacity: 0.4;
+                transform: scale(1.01);
+            }
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(ellipse at 50% 50%, rgba(139, 117, 0, 0.06) 0%, transparent 70%);
+            animation: pulseGlow 15s ease-in-out infinite;
+            z-index: 0;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { 
+                opacity: 0.3; 
+                transform: scale(1) rotate(0deg);
+            }
+            50% { 
+                opacity: 0.5; 
+                transform: scale(1.05) rotate(3deg);
+            }
+        }
+        
+        @keyframes floatGlow {
+            0% { opacity: 0.15; }
+            100% { opacity: 0.35; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 7.5rem;
+            color: var(--cream-refined);
+            margin-bottom: 2.5rem;
+            font-weight: 900;
+            letter-spacing: 12px;
+            text-transform: uppercase;
+            line-height: 1.05;
+            position: relative;
+            text-shadow: 
+                0 6px 50px rgba(139, 117, 0, 0.35),
+                0 3px 30px rgba(139, 117, 0, 0.2),
+                0 1px 15px rgba(0, 0, 0, 0.9),
+                0 0 60px rgba(139, 117, 0, 0.15);
+            animation: fadeInUp 1.2s cubic-bezier(0.19, 1, 0.22, 1) both;
+        }
+
+        .hero p {
+            font-size: 1.6rem;
+            color: var(--champagne-soft);
+            margin-bottom: 3.5rem;
+            font-weight: 300;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            opacity: 0.95;
+            font-style: italic;
+            text-shadow: 
+                0 3px 30px rgba(139, 117, 0, 0.3),
+                0 1px 15px rgba(139, 117, 0, 0.2),
+                0 0 40px rgba(139, 117, 0, 0.1);
+            animation: fadeInUp 1.2s cubic-bezier(0.19, 1, 0.22, 1) 0.3s both;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1.8rem 4.5rem;
+            text-decoration: none;
+            border-radius: 2px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: var(--transition-ultra);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid var(--gold-deep);
+        }
+
+        .cta-primary {
+            background: linear-gradient(135deg, var(--gold-deep) 0%, var(--gold-refined) 50%, var(--gold-elegant) 100%);
+            color: var(--charcoal-deep);
+            box-shadow: 
+                0 15px 60px rgba(139, 117, 0, 0.5),
+                0 8px 35px rgba(139, 117, 0, 0.3),
+                0 4px 20px rgba(0, 0, 0, 0.8),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-secondary {
+            background: rgba(5, 5, 5, 0.7);
+            backdrop-filter: blur(20px);
+            color: var(--gold-deep);
+            border: 2px solid var(--gold-deep);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-14px) scale(1.04);
+            box-shadow: 
+                0 24px 80px rgba(139, 117, 0, 0.6),
+                0 12px 45px rgba(139, 117, 0, 0.4),
+                0 6px 25px rgba(0, 0, 0, 0.9),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3),
+                0 0 60px rgba(139, 117, 0, 0.3);
+            background: linear-gradient(135deg, var(--gold-refined) 0%, var(--gold-deep) 50%, var(--bronze-warm) 100%);
+        }
+
+        .cta-secondary:hover {
+            transform: translateY(-12px) scale(1.03);
+            background: rgba(139, 117, 0, 0.15);
+            backdrop-filter: blur(25px);
+            box-shadow: 0 12px 50px rgba(139, 117, 0, 0.3);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 7rem 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            color: var(--gold-deep);
+            margin-bottom: 2rem;
+            font-weight: 900;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            text-shadow: 
+                0 6px 40px rgba(139, 117, 0, 0.4),
+                0 3px 25px rgba(139, 117, 0, 0.25),
+                0 0 50px rgba(139, 117, 0, 0.15);
+        }
+        
+        .section-header h2::before,
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold-deep), transparent);
+            box-shadow: 0 0 15px rgba(139, 117, 0, 0.4);
+            animation: lineGlow 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes lineGlow {
+            0% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+        
+        .section-header h2::before {
+            top: -15px;
+        }
+        
+        .section-header h2::after {
+            bottom: -15px;
+        }
+
+        .section-header p {
+            color: var(--champagne-muted);
+            font-size: 1.15rem;
+            font-weight: 300;
+            opacity: 0.9;
+            letter-spacing: 2px;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        #about {
+            background: rgba(10, 10, 10, 0.75);
+            backdrop-filter: blur(40px) saturate(130%);
+            box-shadow: 
+                inset 0 1px 0 rgba(139, 117, 0, 0.12),
+                inset 0 80px 100px -60px rgba(139, 117, 0, 0.04);
+            position: relative;
+        }
+
+
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            line-height: 2.2;
+            color: var(--cream-refined);
+            opacity: 0.92;
+            letter-spacing: 0.8px;
+            font-weight: 300;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 4rem 3rem;
+            background: rgba(26, 31, 58, 0.75);
+            backdrop-filter: blur(50px) saturate(150%);
+            border-radius: 0;
+            border: 3px solid var(--gold-deep);
+            transition: var(--transition-ultra);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 
+                0 20px 70px rgba(0, 0, 0, 0.9),
+                0 8px 35px rgba(139, 117, 0, 0.2),
+                0 4px 15px rgba(0, 0, 0, 0.8),
+                inset 0 1px 0 rgba(139, 117, 0, 0.1);
+        }
+
+        .feature::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(139, 117, 0, 0.06), transparent 70%);
+            opacity: 0;
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .feature:hover::before {
+            opacity: 1;
+        }
+
+        .feature:hover {
+            transform: translateY(-20px) scale(1.05);
+            box-shadow: 
+                0 32px 90px rgba(139, 117, 0, 0.45),
+                0 16px 50px rgba(139, 117, 0, 0.25),
+                0 8px 30px rgba(0, 0, 0, 0.95),
+                0 0 60px rgba(139, 117, 0, 0.2),
+                inset 0 1px 0 rgba(139, 117, 0, 0.15);
+            border-color: var(--gold-elegant);
+        }
+
+        .feature i {
+            font-size: 3.5rem;
+            color: var(--gold-deep);
+            margin-bottom: 2rem;
+            text-shadow: 0 4px 20px rgba(139, 117, 0, 0.4);
+            transition: var(--transition-elegant);
+        }
+        
+        .feature:hover i {
+            transform: scale(1.1);
+            text-shadow: 0 6px 30px rgba(139, 117, 0, 0.6);
+        }
+
+        .feature h4 {
+            margin-bottom: 1.2rem;
+            color: var(--gold-deep);
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 1.15rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .feature p {
+            color: var(--cream-refined);
+            opacity: 0.88;
+            line-height: 1.9;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: rgba(10, 10, 10, 0.75);
+            backdrop-filter: blur(40px) saturate(130%);
+            box-shadow: 
+                inset 0 1px 0 rgba(139, 117, 0, 0.12),
+                inset 0 80px 100px -60px rgba(139, 117, 0, 0.04);
+            position: relative;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            padding: 3rem;
+            background: rgba(26, 31, 58, 0.75);
+            backdrop-filter: blur(50px) saturate(150%);
+            border-radius: 0;
+            border: 3px solid var(--gold-deep);
+            border-left: 5px solid var(--gold-deep);
+            transition: var(--transition-ultra);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 
+                0 18px 60px rgba(0, 0, 0, 0.9),
+                0 8px 30px rgba(139, 117, 0, 0.2),
+                0 4px 15px rgba(0, 0, 0, 0.8),
+                inset 0 1px 0 rgba(139, 117, 0, 0.1);
+        }
+        
+        .contact-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--gold-deep), var(--bronze-warm));
+            transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 20px rgba(139, 117, 0, 0.3);
+        }
+        
+        .contact-item:hover::before {
+            width: 100%;
+            opacity: 0.06;
+        }
+
+        .contact-item:hover {
+            border-color: var(--gold-elegant);
+            transform: translateX(20px) scale(1.04);
+            box-shadow: 
+                0 24px 80px rgba(139, 117, 0, 0.45),
+                0 12px 40px rgba(139, 117, 0, 0.25),
+                0 6px 25px rgba(0, 0, 0, 0.92),
+                0 0 60px rgba(139, 117, 0, 0.2),
+                inset 0 1px 0 rgba(139, 117, 0, 0.15);
+        }
+
+        .contact-item i {
+            font-size: 2rem;
+            color: var(--gold-deep);
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            border-radius: 0;
+            box-shadow: 0 4px 20px rgba(139, 117, 0, 0.2);
+            border: 3px solid var(--gold-deep);
+            transition: var(--transition-elegant);
+        }
+        
+        .contact-item:hover i {
+            box-shadow: 0 6px 30px rgba(139, 117, 0, 0.4);
+            border-color: var(--gold-elegant);
+        }
+
+        .contact-item-content h4 {
+            margin-bottom: 1rem;
+            color: var(--gold-deep);
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .contact-item-content p {
+            color: var(--cream-refined);
+            opacity: 0.9;
+            font-weight: 300;
+            font-size: 1.05rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(139, 117, 0, 0.05);
+            backdrop-filter: blur(10px);
+            color: var(--gold-deep);
+            border-radius: 0;
+            text-decoration: none;
+            transition: var(--transition-elegant);
+            box-shadow: 
+                0 6px 20px rgba(0, 0, 0, 0.6),
+                0 3px 10px rgba(139, 117, 0, 0.15),
+                inset 0 1px 0 rgba(139, 117, 0, 0.08);
+            border: 2px solid var(--gold-deep);
+        }
+
+        .social-links a:hover {
+            transform: translateY(-10px) scale(1.08);
+            box-shadow: 
+                0 12px 40px rgba(139, 117, 0, 0.6),
+                0 6px 25px rgba(139, 117, 0, 0.3),
+                0 0 40px rgba(139, 117, 0, 0.2);
+            background: linear-gradient(135deg, var(--gold-deep) 0%, var(--bronze-warm) 100%);
+            color: var(--charcoal-deep);
+            border-color: var(--gold-elegant);
+        }
+
+        .contact-form {
+            background: rgba(26, 31, 58, 0.82);
+            backdrop-filter: blur(60px) saturate(150%);
+            padding: 4rem;
+            border-radius: 0;
+            box-shadow: 
+                0 25px 90px rgba(0,0,0,0.95),
+                0 12px 45px rgba(139, 117, 0, 0.25),
+                0 6px 25px rgba(0, 0, 0, 0.85),
+                inset 0 1px 0 rgba(139, 117, 0, 0.12);
+            border: 3px solid var(--gold-deep);
+            position: relative;
+        }
+        
+        .contact-form::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 0%, rgba(139, 117, 0, 0.06) 0%, transparent 60%);
+            pointer-events: none;
+            border-radius: 0;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 1.2rem;
+            color: var(--gold-deep);
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1.4rem 0;
+            border: none;
+            border-bottom: 2px solid rgba(139, 117, 0, 0.4);
+            background: rgba(15, 15, 15, 0.3);
+            border-radius: 0;
+            font-family: inherit;
+            font-size: 1.1rem;
+            transition: var(--transition-ultra);
+            color: var(--cream-refined);
+            font-weight: 300;
+            letter-spacing: 0.8px;
+        }
+        
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(139, 117, 0, 0.5);
+            letter-spacing: 1.5px;
+            font-style: italic;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-bottom: 3px solid var(--gold-deep);
+            background: rgba(15, 15, 15, 0.5);
+            box-shadow: 0 6px 30px rgba(139, 117, 0, 0.4), 0 3px 0 var(--gold-deep);
+        }
+        
+        .form-group input:focus::placeholder,
+        .form-group textarea:focus::placeholder {
+            color: rgba(139, 117, 0, 0.7);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1.8rem;
+            background: linear-gradient(135deg, var(--gold-deep) 0%, var(--gold-refined) 50%, var(--bronze-warm) 100%);
+            color: var(--charcoal-deep);
+            border: 3px solid var(--gold-deep);
+            border-radius: 2px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition-ultra);
+            letter-spacing: 3.5px;
+            box-shadow: 0 12px 50px rgba(139, 117, 0, 0.4), 0 6px 25px rgba(0, 0, 0, 0.6);
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .submit-btn:hover::before {
+            width: 400px;
+            height: 400px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 16px 60px rgba(139, 117, 0, 0.6), 0 8px 30px rgba(0, 0, 0, 0.8);
+            background: linear-gradient(135deg, var(--gold-refined) 0%, var(--gold-deep) 50%, var(--gold-elegant) 100%);
+        }
+
+        .success-message {
+            display: none;
+            padding: 2rem;
+            background: rgba(139, 117, 0, 0.12);
+            color: var(--gold-deep);
+            border-radius: 0;
+            margin-top: 2rem;
+            text-align: center;
+            border: 2px solid var(--gold-deep);
+            letter-spacing: 2px;
+            box-shadow: 0 8px 30px rgba(139, 117, 0, 0.3);
+            font-weight: 500;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(5, 5, 5, 0.99);
+            color: var(--champagne-muted);
+            text-align: center;
+            padding: 4rem;
+            border-top: 3px solid var(--gold-deep);
+            box-shadow: 
+                0 -20px 80px rgba(0, 0, 0, 0.95),
+                0 -8px 40px rgba(139, 117, 0, 0.2),
+                0 -4px 20px rgba(0, 0, 0, 0.85);
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold-deep) 50%, transparent);
+            box-shadow: 
+                0 0 30px rgba(139, 117, 0, 0.5),
+                0 0 15px rgba(139, 117, 0, 0.3);
+        }
+
+        footer a {
+            color: var(--gold-deep);
+            text-decoration: none;
+            transition: var(--transition-elegant);
+        }
+
+        footer a:hover {
+            color: var(--gold-elegant);
+            text-shadow: 0 0 20px rgba(139, 117, 0, 0.4);
+        }
+
+        /* Enhanced Hero Badge */
+        .hero-badge {
+            display: inline-block;
+            padding: 0.8rem 2.5rem;
+            background: rgba(139, 117, 0, 0.06);
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--gold-deep);
+            color: var(--gold-deep);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 
+                0 0 30px rgba(139, 117, 0, 0.3),
+                0 4px 20px rgba(139, 117, 0, 0.15),
+                inset 0 1px 0 rgba(139, 117, 0, 0.1);
+        }
+
+        .hero-badge::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(139, 117, 0, 0.3), transparent);
+            animation: shimmer 4s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        /* Hero Buttons Container */
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+
+        /* BMI Calculator Section */
+        #bmi-calculator {
+            background: rgba(10, 10, 10, 0.75);
+            backdrop-filter: blur(40px) saturate(130%);
+            box-shadow: 
+                inset 0 1px 0 rgba(139, 117, 0, 0.12),
+                inset 0 80px 100px -60px rgba(139, 117, 0, 0.04);
+            position: relative;
+        }
+
+        .bmi-calculator-card {
+            background: rgba(26, 31, 58, 0.85);
+            backdrop-filter: blur(60px) saturate(150%);
+            border-radius: 0;
+            padding: 5rem;
+            box-shadow: 
+                0 30px 100px rgba(0,0,0,0.95),
+                0 15px 50px rgba(139, 117, 0, 0.25),
+                0 5px 25px rgba(139, 117, 0, 0.15),
+                inset 0 1px 0 rgba(139, 117, 0, 0.15);
+            max-width: 900px;
+            margin: 0 auto 4rem;
+            border: 3px solid var(--gold-deep);
+            position: relative;
+            transition: var(--transition-ultra);
+        }
+        
+        .bmi-calculator-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 0%, rgba(139, 117, 0, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+            border-radius: 0;
+        }
+        
+        .bmi-calculator-card:hover {
+            box-shadow: 
+                0 35px 120px rgba(0,0,0,0.98),
+                0 18px 60px rgba(139, 117, 0, 0.35),
+                0 8px 30px rgba(139, 117, 0, 0.2),
+                0 0 80px rgba(139, 117, 0, 0.25),
+                inset 0 1px 0 rgba(139, 117, 0, 0.2);
+            border-color: var(--gold-elegant);
+            transform: translateY(-5px);
+        }
+
+        .calculator-inputs {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .input-group label {
+            font-weight: 600;
+            color: var(--gold-deep);
+            font-size: 0.95rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .input-group input[type="number"] {
+            padding: 1.4rem 0;
+            border: none;
+            border-bottom: 2px solid rgba(139, 117, 0, 0.4);
+            background: rgba(15, 15, 15, 0.3);
+            border-radius: 0;
+            font-size: 1.2rem;
+            transition: var(--transition-ultra);
+            color: var(--cream-refined);
+            font-weight: 300;
+            letter-spacing: 0.8px;
+        }
+        
+        .input-group input[type="number"]::placeholder {
+            color: rgba(139, 117, 0, 0.5);
+            letter-spacing: 1.5px;
+            font-style: italic;
+        }
+
+        .input-group input[type="number"]:focus {
+            outline: none;
+            border-bottom: 3px solid var(--gold-deep);
+            background: rgba(15, 15, 15, 0.5);
+            box-shadow: 0 10px 50px rgba(139, 117, 0, 0.5), 0 3px 0 var(--gold-deep);
+        }
+
+        .input-group input[type="range"] {
+            width: 100%;
+            height: 5px;
+            border-radius: 0;
+            background: rgba(139, 117, 0, 0.3);
+            outline: none;
+            -webkit-appearance: none;
+            transition: var(--transition-ultra);
+        }
+        
+        .input-group input[type="range"]:hover {
+            background: rgba(139, 117, 0, 0.45);
+        }
+
+        .input-group input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 26px;
+            height: 26px;
+            border-radius: 0;
+            background: linear-gradient(135deg, var(--gold-deep) 0%, var(--bronze-warm) 100%);
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(139, 117, 0, 0.5);
+            border: 3px solid var(--gold-deep);
+            transition: var(--transition-ultra);
+        }
+        
+        .input-group input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+            box-shadow: 0 8px 30px rgba(139, 117, 0, 0.6);
+        }
+
+        .input-group input[type="range"]::-moz-range-thumb {
+            width: 26px;
+            height: 26px;
+            border-radius: 0;
+            background: linear-gradient(135deg, var(--gold-deep) 0%, var(--bronze-warm) 100%);
+            cursor: pointer;
+            border: 3px solid var(--gold-deep);
+            box-shadow: 0 6px 20px rgba(139, 117, 0, 0.5);
+            transition: var(--transition-ultra);
+        }
+        
+        .input-group input[type="range"]::-moz-range-thumb:hover {
+            transform: scale(1.2);
+            box-shadow: 0 8px 30px rgba(139, 117, 0, 0.6);
+        }
+
+        .slider-value {
+            text-align: center;
+            font-weight: 800;
+            color: var(--gold-deep);
+            font-size: 1.6rem;
+            letter-spacing: 2px;
+            margin-top: 1rem;
+            text-shadow: 0 2px 15px rgba(139, 117, 0, 0.3);
+        }
+
+        .calculator-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .btn-calculate,
+        .btn-clear {
+            flex: 1;
+            padding: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            letter-spacing: 0.5px;
+        }
+
+        .btn-calculate {
+            background: linear-gradient(135deg, var(--gold-deep) 0%, var(--gold-refined) 50%, var(--bronze-warm) 100%);
+            color: var(--charcoal-deep);
+            box-shadow: 0 12px 50px rgba(139, 117, 0, 0.4), 0 6px 25px rgba(0, 0, 0, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 3.5px;
+            font-weight: 700;
+            position: relative;
+            overflow: hidden;
+            border-radius: 2px;
+        }
+        
+        .btn-calculate::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .btn-calculate:hover::after {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-calculate:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 16px 60px rgba(139, 117, 0, 0.6), 0 8px 30px rgba(0, 0, 0, 0.8);
+            background: linear-gradient(135deg, var(--gold-refined) 0%, var(--gold-deep) 50%, var(--gold-elegant) 100%);
+        }
+
+        .btn-clear {
+            background: transparent;
+            color: var(--gold-deep);
+            border: 2px solid var(--gold-deep);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            border-radius: 2px;
+        }
+
+        .btn-clear:hover {
+            background: rgba(139, 117, 0, 0.15);
+            transform: translateY(-8px);
+            box-shadow: 0 10px 40px rgba(139, 117, 0, 0.3);
+        }
+
+        .bmi-result {
+            margin-top: 4rem;
+            padding: 4rem;
+            background: rgba(13, 17, 23, 0.85);
+            backdrop-filter: blur(60px) saturate(150%);
+            border-radius: 0;
+            border: 3px solid var(--gold-deep);
+            box-shadow: 
+                0 28px 90px rgba(0, 0, 0, 0.98),
+                0 14px 50px rgba(139, 117, 0, 0.3),
+                0 6px 25px rgba(139, 117, 0, 0.2),
+                inset 0 1px 0 rgba(139, 117, 0, 0.15);
+            animation: fadeInScale 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+            position: relative;
+        }
+        
+        .bmi-result::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(139, 117, 0, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+            border-radius: 0;
+        }
+        
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .result-value {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .result-value h3 {
+            color: var(--champagne-muted);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .bmi-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 8rem;
+            font-weight: 900;
+            color: var(--gold-deep);
+            text-shadow: 
+                0 8px 50px rgba(139, 117, 0, 0.5),
+                0 4px 30px rgba(139, 117, 0, 0.35),
+                0 0 60px rgba(139, 117, 0, 0.2);
+            letter-spacing: 2px;
+        }
+
+        .result-category {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .category-badge {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            border-radius: 0;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: white;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .category-badge.underweight {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+        }
+
+        .category-badge.normal {
+            background: linear-gradient(135deg, var(--gold-primary) 0%, #10b981 100%);
+        }
+
+        .category-badge.overweight {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+        }
+
+        .category-badge.obese1 {
+            background: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
+        }
+
+        .category-badge.obese2 {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+        }
+
+        .category-badge.obese3 {
+            background: linear-gradient(135deg, #991b1b 0%, #7f1d1d 100%);
+        }
+
+        .result-details {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .detail-item {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(20px);
+            padding: 2.5rem;
+            border-radius: 0;
+            border: 2px solid rgba(139, 117, 0, 0.3);
+            border-left: 4px solid var(--gold-deep);
+            box-shadow: 
+                0 8px 30px rgba(0, 0, 0, 0.8),
+                0 4px 15px rgba(139, 117, 0, 0.1),
+                inset 0 1px 0 rgba(139, 117, 0, 0.08);
+            transition: var(--transition-elegant);
+        }
+        
+        .detail-item:hover {
+            background: rgba(0, 0, 0, 0.7);
+            border-left-width: 6px;
+            transform: translateX(8px);
+            box-shadow: 
+                0 12px 40px rgba(0, 0, 0, 0.85),
+                0 6px 20px rgba(139, 117, 0, 0.15),
+                inset 0 1px 0 rgba(139, 117, 0, 0.12);
+        }
+
+        .detail-item i {
+            font-size: 1.8rem;
+            color: var(--gold-deep);
+            margin-top: 0.2rem;
+            text-shadow: 0 2px 15px rgba(139, 117, 0, 0.3);
+        }
+
+        .detail-item strong {
+            display: block;
+            color: var(--gold-deep);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+        }
+
+        .detail-item p {
+            color: var(--cream-refined);
+            margin: 0;
+            opacity: 0.9;
+            line-height: 2;
+            font-size: 1.05rem;
+        }
+
+        .bmi-chart {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .bmi-chart h3 {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            color: var(--gold-deep);
+            margin-bottom: 4rem;
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            text-shadow: 0 4px 30px rgba(139, 117, 0, 0.3);
+        }
+
+        .bmi-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .category-item {
+            padding: 2.5rem 1.5rem;
+            border-radius: 0;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            box-shadow: 
+                0 15px 50px rgba(0,0,0,0.7),
+                0 6px 25px rgba(0,0,0,0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px) saturate(150%);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition-ultra);
+        }
+
+        .category-item:hover {
+            transform: translateY(-14px) scale(1.04);
+            box-shadow: 
+                0 25px 80px rgba(0,0,0,0.8),
+                0 10px 40px rgba(0,0,0,0.6),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2),
+                0 0 40px rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .category-item.underweight {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+        }
+
+        .category-item.normal {
+            background: linear-gradient(135deg, var(--gold-primary) 0%, #10b981 100%);
+        }
+
+        .category-item.overweight {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+        }
+
+        .category-item.obese1 {
+            background: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
+        }
+
+        .category-item.obese2 {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+        }
+
+        .category-item.obese3 {
+            background: linear-gradient(135deg, #991b1b 0%, #7f1d1d 100%);
+        }
+
+        .category-name {
+            display: block;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .category-range {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+        }
+
+        /* Offers Section */
+        #offers {
+            background: rgba(10, 10, 10, 0.75);
+            backdrop-filter: blur(40px) saturate(130%);
+            box-shadow: 
+                inset 0 1px 0 rgba(139, 117, 0, 0.12),
+                inset 0 80px 100px -60px rgba(139, 117, 0, 0.04);
+            position: relative;
+        }
+
+        .offers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .offer-card {
+            background: rgba(26, 31, 58, 0.78);
+            backdrop-filter: blur(60px) saturate(150%);
+            border-radius: 0;
+            padding: 4rem;
+            box-shadow: 
+                0 25px 85px rgba(0,0,0,0.93),
+                0 12px 45px rgba(139, 117, 0, 0.2),
+                0 6px 25px rgba(0, 0, 0, 0.85),
+                inset 0 1px 0 rgba(139, 117, 0, 0.12);
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition-ultra);
+            border: 3px solid var(--gold-deep);
+        }
+
+        .offer-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(139, 117, 0, 0.06) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .offer-card:hover::after {
+            opacity: 1;
+        }
+
+        .offer-card:hover {
+            transform: translateY(-24px) scale(1.04);
+            box-shadow: 
+                0 35px 110px rgba(139, 117, 0, 0.45),
+                0 18px 55px rgba(139, 117, 0, 0.25),
+                0 8px 30px rgba(0, 0, 0, 0.94),
+                0 0 70px rgba(139, 117, 0, 0.2),
+                inset 0 1px 0 rgba(139, 117, 0, 0.15);
+            border-color: var(--gold-elegant);
+        }
+
+        .offer-badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(135deg, var(--gold-deep) 0%, var(--bronze-warm) 100%);
+            color: var(--charcoal-deep);
+            padding: 0.8rem 2rem;
+            border-radius: 0;
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            box-shadow: 
+                0 6px 25px rgba(139, 117, 0, 0.5),
+                0 3px 15px rgba(139, 117, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .offer-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--gold-deep);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            margin-top: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-shadow: 
+                0 4px 30px rgba(139, 117, 0, 0.4),
+                0 2px 20px rgba(139, 117, 0, 0.25),
+                0 0 40px rgba(139, 117, 0, 0.15);
+        }
+
+        .discount-badge {
+            display: inline-block;
+            background: rgba(139, 117, 0, 0.08);
+            backdrop-filter: blur(10px);
+            color: var(--gold-deep);
+            padding: 0.9rem 2.5rem;
+            border-radius: 0;
+            font-weight: 800;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            border: 2px solid var(--gold-deep);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            box-shadow: 
+                0 0 25px rgba(139, 117, 0, 0.3),
+                0 4px 15px rgba(139, 117, 0, 0.15),
+                inset 0 1px 0 rgba(139, 117, 0, 0.1);
+            text-shadow: 0 2px 15px rgba(139, 117, 0, 0.2);
+            transition: var(--transition-elegant);
+        }
+        
+        .discount-badge:hover {
+            background: rgba(139, 117, 0, 0.12);
+            box-shadow: 
+                0 0 35px rgba(139, 117, 0, 0.4),
+                0 6px 20px rgba(139, 117, 0, 0.2),
+                inset 0 1px 0 rgba(139, 117, 0, 0.15);
+        }
+
+        .offer-card p {
+            color: var(--cream-refined);
+            line-height: 2.1;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            font-weight: 300;
+            font-size: 1.05rem;
+        }
+
+        .offer-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 1.6rem;
+            background: linear-gradient(135deg, var(--gold-deep) 0%, var(--gold-refined) 50%, var(--bronze-warm) 100%);
+            color: var(--charcoal-deep);
+            text-align: center;
+            text-decoration: none;
+            border-radius: 2px;
+            font-weight: 700;
+            transition: var(--transition-ultra);
+            letter-spacing: 3.5px;
+            box-shadow: 0 12px 50px rgba(139, 117, 0, 0.4), 0 6px 25px rgba(0, 0, 0, 0.6);
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid var(--gold-deep);
+        }
+        
+        .offer-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .offer-btn:hover::before {
+            width: 400px;
+            height: 400px;
+        }
+
+        .offer-btn:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 18px 60px rgba(139, 117, 0, 0.6), 0 8px 30px rgba(0, 0, 0, 0.8);
+            background: linear-gradient(135deg, var(--gold-refined) 0%, var(--gold-deep) 50%, var(--gold-elegant) 100%);
+        }
+
+        .membership-packages {
+            margin-top: 3rem;
+        }
+
+        .membership-packages h3 {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            color: var(--gold-deep);
+            font-size: 3.5rem;
+            margin-bottom: 4.5rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            text-shadow: 0 4px 30px rgba(139, 117, 0, 0.3);
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .package-card {
+            background: rgba(26, 31, 58, 0.8);
+            backdrop-filter: blur(60px) saturate(160%);
+            border-radius: 0;
+            padding: 4rem;
+            box-shadow: 
+                0 25px 90px rgba(0,0,0,0.95),
+                0 12px 45px rgba(139, 117, 0, 0.22),
+                0 6px 25px rgba(0, 0, 0, 0.85),
+                inset 0 1px 0 rgba(139, 117, 0, 0.12);
+            position: relative;
+            transition: var(--transition-ultra);
+            border: 3px solid var(--gold-deep);
+        }
+
+        .package-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(139, 117, 0, 0.04), transparent);
+            opacity: 0;
+            transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+        }
+
+        .package-card:hover::before {
+            opacity: 1;
+        }
+
+        .package-card:hover {
+            transform: translateY(-26px) scale(1.05);
+            box-shadow: 
+                0 40px 120px rgba(139, 117, 0, 0.4),
+                0 20px 65px rgba(139, 117, 0, 0.25),
+                0 10px 35px rgba(0, 0, 0, 0.95),
+                0 0 80px rgba(139, 117, 0, 0.2),
+                inset 0 1px 0 rgba(139, 117, 0, 0.18);
+            border-color: var(--gold-elegant);
+        }
+
+        .package-card.popular {
+            border: 4px solid var(--gold-deep);
+            box-shadow: 
+                0 35px 110px rgba(139, 117, 0, 0.55),
+                0 18px 55px rgba(139, 117, 0, 0.3),
+                0 8px 30px rgba(0, 0, 0, 0.95),
+                0 0 90px rgba(139, 117, 0, 0.25),
+                inset 0 1px 0 rgba(139, 117, 0, 0.2);
+            background: rgba(26, 31, 58, 0.85);
+            transform: scale(1.02);
+        }
+
+        .package-card.premium {
+            background: rgba(26, 31, 58, 0.88);
+            backdrop-filter: blur(40px);
+            border: 4px solid var(--gold-elegant);
+        }
+
+        .popular-badge,
+        .premium-badge {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--gold-elegant) 0%, var(--gold-deep) 50%, var(--bronze-warm) 100%);
+            color: var(--charcoal-deep);
+            padding: 1rem 3rem;
+            border-radius: 0;
+            font-size: 0.95rem;
+            font-weight: 900;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            border: 2px solid var(--gold-deep);
+            box-shadow: 
+                0 8px 30px rgba(139, 117, 0, 0.45),
+                0 4px 20px rgba(139, 117, 0, 0.25),
+                0 0 40px rgba(139, 117, 0, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .premium-badge {
+            background: linear-gradient(135deg, var(--gold-refined) 0%, var(--bronze-warm) 100%);
+            color: var(--cream-refined);
+        }
+
+        .package-duration {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: var(--gold-deep);
+            margin-bottom: 1.2rem;
+            margin-top: 1.2rem;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            text-shadow: 
+                0 4px 30px rgba(139, 117, 0, 0.35),
+                0 2px 20px rgba(139, 117, 0, 0.2),
+                0 0 40px rgba(139, 117, 0, 0.15);
+        }
+
+        .package-price {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--champagne-muted);
+            font-weight: 400;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            letter-spacing: 2px;
+            font-style: italic;
+        }
+
+        .package-features {
+            list-style: none;
+            margin-bottom: 2.5rem;
+            padding-left: 0;
+        }
+
+        .package-features li {
+            padding: 1.2rem 0;
+            color: var(--cream-refined);
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            opacity: 0.94;
+            font-weight: 400;
+            line-height: 2;
+            font-size: 1.08rem;
+            animation: fadeFeature 1s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        
+        @keyframes fadeFeature {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 0.94; transform: none; }
+        }
+
+        .package-features i {
+            color: var(--gold-deep);
+            font-size: 1.2rem;
+            text-shadow: 0 2px 10px rgba(139, 117, 0, 0.3);
+        }
+
+        .package-btn {
+            display: block;
+            width: 100%;
+            padding: 1.7rem;
+            background: linear-gradient(135deg, var(--gold-deep) 0%, var(--gold-refined) 50%, var(--bronze-warm) 100%);
+            color: var(--charcoal-deep);
+            text-align: center;
+            text-decoration: none;
+            border-radius: 2px;
+            font-weight: 700;
+            transition: var(--transition-ultra);
+            letter-spacing: 3.5px;
+            box-shadow: 0 14px 56px rgba(139, 117, 0, 0.4), 0 8px 34px rgba(0, 0, 0, 0.7);
+            text-transform: uppercase;
+            border: 3px solid var(--gold-deep);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .package-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .package-btn:hover::before {
+            width: 400px;
+            height: 400px;
+        }
+
+        .package-btn:hover {
+            transform: translateY(-13px) scale(1.04);
+            box-shadow: 0 25px 80px rgba(139, 117, 0, 0.4), 0 16px 50px rgba(0, 0, 0, 0.88);
+            background: linear-gradient(135deg, var(--gold-refined) 0%, var(--gold-deep) 50%, var(--gold-elegant) 100%);
+        }
+
+        /* Scroll Animations & Premium Effects */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .scale-in.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        /* Smooth Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            opacity: 0.75;
+            animation: float 4s ease-in-out infinite;
+            cursor: pointer;
+        }
+        
+        .scroll-indicator span {
+            color: var(--gold-deep);
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-shadow: 0 2px 15px rgba(139, 117, 0, 0.3);
+        }
+        
+        .scroll-indicator::after {
+            content: '';
+            width: 2px;
+            height: 40px;
+            background: linear-gradient(180deg, var(--gold-deep), transparent);
+            box-shadow: 0 0 15px rgba(139, 117, 0, 0.7);
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateX(-50%) translateY(0);
+                opacity: 0.75;
+            }
+            50% {
+                transform: translateX(-50%) translateY(14px);
+                opacity: 0.95;
+            }
+        }
+        
+        /* Premium Loading State */
+        .loading {
+            pointer-events: none;
+            opacity: 0.6;
+            position: relative;
+        }
+        
+        .loading::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 30px;
+            height: 30px;
+            margin: -15px 0 0 -15px;
+            border: 3px solid var(--gold-primary);
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 0.8s linear infinite;
+        }
+        
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        /* Category Badge Animations */
+        .category-badge {
+            animation: fadeInScale 0.5s ease-out, pulse 2s ease-in-out 0.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.03);
+            }
+        }
+        
+        /* Premium Glow Effects */
+        @keyframes glowPulse {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(139, 117, 0, 0.25);
+            }
+            50% {
+                box-shadow: 0 0 35px rgba(139, 117, 0, 0.4);
+            }
+        }
+        
+        /* Section Entrance */
+        section {
+            position: relative;
+        }
+        
+        section::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(139, 117, 0, 0.3) 50%, transparent);
+            box-shadow: 
+                0 0 20px rgba(139, 117, 0, 0.25),
+                0 0 10px rgba(139, 117, 0, 0.15);
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                right: -100%;
+                width: 320px;
+                height: calc(100vh - 80px);
+                background: rgba(5, 5, 5, 0.98);
+                backdrop-filter: blur(40px);
+                flex-direction: column;
+                padding: 4rem 2.5rem;
+                transition: var(--transition-ultra);
+                box-shadow: -12px 0 60px rgba(0,0,0,0.9);
+                border-left: 3px solid var(--gold-deep);
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            nav {
+                padding: 1rem 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 4rem;
+                letter-spacing: 4px;
+            }
+
+            .hero p {
+                font-size: 1.25rem;
+                letter-spacing: 3px;
+            }
+            
+            .scroll-indicator {
+                display: none;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .cta-button {
+                padding: 1.2rem 2.5rem;
+                font-size: 0.95rem;
+            }
+
+            .section-header h2 {
+                font-size: 3.2rem;
+                letter-spacing: 3px;
+            }
+            
+            .section-header h2::before,
+            .section-header h2::after {
+                width: 70px;
+            }
+
+            .section-header p {
+                font-size: 1rem;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .bmi-categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .calculator-buttons {
+                flex-direction: column;
+            }
+            
+            .bmi-calculator-card {
+                padding: 2.5rem;
+            }
+            
+            .bmi-number {
+                font-size: 5rem;
+            }
+
+            .owner-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .offers-grid,
+            .packages-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 4rem 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2.8rem;
+                letter-spacing: 3px;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+            }
+
+            .hero-badge {
+                font-size: 0.75rem;
+                padding: 0.6rem 2rem;
+                margin-bottom: 2.5rem;
+            }
+
+            .packages-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+
+            .offers-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-features {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .bmi-calculator-card {
+                padding: 2rem;
+            }
+            
+            .contact-form {
+                padding: 2.5rem;
+            }
+            
+            .package-card,
+            .offer-card,
+            .feature {
+                padding: 2.5rem 2rem;
+            }
+        }
+        
+        /* Premium Hover States for Touch Devices */
+        @media (hover: none) {
+            .cta-button:active,
+            .btn-calculate:active,
+            .package-btn:active,
+            .offer-btn:active,
+            .submit-btn:active {
+                transform: scale(0.96);
+            }
+        }
+        
+        /* Additional Ultra Lavish Animations */
+        @keyframes fadeInScaleUp {
+            from {
+                opacity: 0;
+                transform: scale(0.92) translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+        
+        /* Subtle Parallax Effect */
+        @media (prefers-reduced-motion: no-preference) {
+            .hero-content {
+                animation: fadeInScaleUp 1.4s cubic-bezier(0.19, 1, 0.22, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">La5<span>fitness</span></a>
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#bmi-calculator">BMI Calculator</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#packages">Membership</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>La5fitness Center</h1>
+            <p>Premium Fitness. Elevated Lifestyle.</p>
+            <div class="hero-buttons">
+                <a href="#packages" class="cta-button cta-primary">Explore Membership</a>
+                <a href="#bmi-calculator" class="cta-button cta-secondary">Calculate BMI</a>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About La5fitness</h2>
+                <p>The Pinnacle of Luxury Fitness</p>
+            </div>
+            <div class="about-content">
+                <p>La5fitness center represents the pinnacle of luxury fitness. We curate an exclusive experience for discerning members who demand excellence. Our premium facilities, expert guidance, and refined atmosphere create the perfect environment to elevate your fitness journey to unprecedented levels.</p>
+                <p>Join an elite community where sophistication meets performance, and every detail is crafted for your success.</p>
+                
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-user-check"></i>
+                        <h4>Bespoke Programs</h4>
+                        <p>Personalized training designed for excellence</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-crown"></i>
+                        <h4>Premium Facilities</h4>
+                        <p>State-of-the-art equipment &amp; luxury amenities</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-star"></i>
+                        <h4>Elite Service</h4>
+                        <p>Uncompromising attention to every detail</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BMI Calculator Section -->
+    <section id="bmi-calculator">
+        <div class="container">
+            <div class="section-header">
+                <h2>Discover Your Body Composition</h2>
+                <p>Precision Analysis for Elite Fitness</p>
+            </div>
+            <div class="bmi-calculator-card">
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label for="weight">Weight (kg)</label>
+                        <input type="number" id="weight" placeholder="Enter weight in kg" min="20" max="300" step="0.1">
+                        <input type="range" id="weightSlider" min="20" max="200" value="70" step="0.5">
+                        <span class="slider-value" id="weightValue">70 kg</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="height">Height (cm)</label>
+                        <input type="number" id="height" placeholder="Enter height in cm" min="100" max="250" step="0.1">
+                        <input type="range" id="heightSlider" min="100" max="220" value="170" step="0.5">
+                        <span class="slider-value" id="heightValue">170 cm</span>
+                    </div>
+                    <div class="calculator-buttons">
+                        <button class="btn-calculate" id="calculateBtn">Calculate BMI</button>
+                        <button class="btn-clear" id="clearBtn">Clear</button>
+                    </div>
+                </div>
+                <div class="bmi-result" id="bmiResult" style="display: none;">
+                    <div class="result-value">
+                        <h3>Your BMI</h3>
+                        <div class="bmi-number" id="bmiNumber">0</div>
+                    </div>
+                    <div class="result-category" id="bmiCategory">
+                        <div class="category-badge" id="categoryBadge">Normal</div>
+                    </div>
+                    <div class="result-details">
+                        <div class="detail-item">
+                            <i class="fas fa-weight"></i>
+                            <div>
+                                <strong>Ideal Weight Range</strong>
+                                <p id="idealWeight">55 - 75 kg</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <div>
+                                <strong>Fitness Tip</strong>
+                                <p id="fitnessTip">Great! Maintain your current lifestyle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bmi-chart">
+                <h3>BMI Categories</h3>
+                <div class="bmi-categories">
+                    <div class="category-item underweight">
+                        <span class="category-name">Underweight</span>
+                        <span class="category-range">&lt; 18.5</span>
+                    </div>
+                    <div class="category-item normal">
+                        <span class="category-name">Normal</span>
+                        <span class="category-range">18.5 - 24.9</span>
+                    </div>
+                    <div class="category-item overweight">
+                        <span class="category-name">Overweight</span>
+                        <span class="category-range">25 - 29.9</span>
+                    </div>
+                    <div class="category-item obese1">
+                        <span class="category-name">Obese Class I</span>
+                        <span class="category-range">30 - 34.9</span>
+                    </div>
+                    <div class="category-item obese2">
+                        <span class="category-name">Obese Class II</span>
+                        <span class="category-range">35 - 39.9</span>
+                    </div>
+                    <div class="category-item obese3">
+                        <span class="category-name">Obese Class III</span>
+                        <span class="category-range">&gt; 40</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Packages Section -->
+    <section id="packages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Membership Tiers</h2>
+                <p>Curated Excellence for Every Journey</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-duration">Starter Elite</div>
+                    <div class="package-price">3 Months</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Unlimited premium gym access</li>
+                        <li><i class="fas fa-check"></i> Body composition analysis</li>
+                    </ul>
+                    <a href="#contact" class="package-btn">Select Package</a>
+                </div>
+                <div class="package-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="package-duration">Premium Plus</div>
+                    <div class="package-price">6 Months</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Unlimited premium gym access</li>
+                        <li><i class="fas fa-check"></i> Advanced fitness programs</li>
+                        <li><i class="fas fa-check"></i> Bi-weekly progress tracking</li>
+                    </ul>
+                    <a href="#contact" class="package-btn">Select Package</a>
+                </div>
+                <div class="package-card">
+                    <div class="package-duration">Platinum</div>
+                    <div class="package-price">1 Year</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Unlimited premium gym access</li>
+                        <li><i class="fas fa-check"></i> Elite training programs</li>
+                        <li><i class="fas fa-check"></i> Monthly assessments</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                    </ul>
+                    <a href="#contact" class="package-btn">Select Package</a>
+                </div>
+                <div class="package-card premium">
+                    <div class="premium-badge">Best Value</div>
+                    <div class="package-duration">VIP Lifetime</div>
+                    <div class="package-price">2 Years</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Lifetime premium gym access</li>
+                        <li><i class="fas fa-check"></i> Exclusive VIP benefits</li>
+                        <li><i class="fas fa-check"></i> Quarterly assessments</li>
+                        <li><i class="fas fa-check"></i> Executive member lounge</li>
+                        <li><i class="fas fa-check"></i> Elite 24/7 support</li>
+                        <li><i class="fas fa-check"></i> Lifetime membership card</li>
+                    </ul>
+                    <a href="#contact" class="package-btn">Select Package</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section id="offers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Exclusive Member Benefits</h2>
+                <p>Premium Rewards for Distinguished Members</p>
+            </div>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge">Rewards</div>
+                    <h3>Refer a Friend Program</h3>
+                    <div class="discount-badge">EXCLUSIVE BENEFITS</div>
+                    <p>Share the luxury experience. Refer a friend and both receive exclusive member benefits and rewards.</p>
+                    <a href="#contact" class="offer-btn">Learn More</a>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-badge">Elite Benefit</div>
+                    <h3>Group Membership</h3>
+                    <div class="discount-badge">PREMIUM DISCOUNT</div>
+                    <p>Elevate together. Groups of 3+ members receive premium discounts on all elite packages.</p>
+                    <a href="#contact" class="offer-btn">Join Group</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Begin Your Exclusive Fitness Journey</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-user-tie"></i>
+                        <div class="contact-item-content">
+                            <h4>Owner</h4>
+                            <p><strong>Sai Kiran</strong></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-item-content">
+                            <h4>Mobile</h4>
+                            <p><a href="tel:7989764894" style="color: var(--primary-color); font-weight: 600;">7989764894</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-item-content">
+                            <h4>Email</h4>
+                            <p>contact@la5fitness.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-item-content">
+                            <h4>Location &amp; Connect With Us</h4>
+                            <p>Your City Location</p>
+                            <div class="social-links">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="success-message" id="successMessage">
+                        <i class="fas fa-check-circle"></i> Thank you! We'll get back to you soon.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="letter-spacing: 1px;">&copy; 2025 La5fitness Center. All rights reserved.</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem; letter-spacing: 0.5px; opacity: 0.9;">Founder: Sai Kiran | <a href="tel:7989764894">7989764894</a></p>
+    </footer>
+
+    <script>
+        // Premium Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections and cards
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.section-header, .package-card, .offer-card, .feature, .contact-item, .bmi-calculator-card');
+            animatedElements.forEach(el => {
+                el.classList.add('fade-in');
+                observer.observe(el);
+            });
+            
+            // Stagger animations for grid items
+            const gridItems = document.querySelectorAll('.packages-grid .package-card, .offers-grid .offer-card, .about-features .feature');
+            gridItems.forEach((item, index) => {
+                item.style.transitionDelay = `${index * 0.1}s`;
+            });
+        });
+
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Active Navigation on Scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navItems = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href').substring(1) === current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message
+            successMessage.classList.add('show');
+            
+            // Reset form
+            contactForm.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(function() {
+                successMessage.classList.remove('show');
+            }, 5000);
+        });
+
+        // BMI Calculator
+        const weightInput = document.getElementById('weight');
+        const heightInput = document.getElementById('height');
+        const weightSlider = document.getElementById('weightSlider');
+        const heightSlider = document.getElementById('heightSlider');
+        const weightValue = document.getElementById('weightValue');
+        const heightValue = document.getElementById('heightValue');
+        const calculateBtn = document.getElementById('calculateBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const bmiResult = document.getElementById('bmiResult');
+        const bmiNumber = document.getElementById('bmiNumber');
+        const categoryBadge = document.getElementById('categoryBadge');
+        const idealWeight = document.getElementById('idealWeight');
+        const fitnessTip = document.getElementById('fitnessTip');
+
+        // Sync weight input and slider
+        weightSlider.addEventListener('input', function() {
+            weightInput.value = this.value;
+            weightValue.textContent = this.value + ' kg';
+        });
+
+        weightInput.addEventListener('input', function() {
+            if (this.value >= 20 && this.value <= 200) {
+                weightSlider.value = this.value;
+                weightValue.textContent = this.value + ' kg';
+            }
+        });
+
+        // Sync height input and slider
+        heightSlider.addEventListener('input', function() {
+            heightInput.value = this.value;
+            heightValue.textContent = this.value + ' cm';
+        });
+
+        heightInput.addEventListener('input', function() {
+            if (this.value >= 100 && this.value <= 220) {
+                heightSlider.value = this.value;
+                heightValue.textContent = this.value + ' cm';
+            }
+        });
+
+        // Calculate BMI
+        calculateBtn.addEventListener('click', function() {
+            const weight = parseFloat(weightInput.value || weightSlider.value);
+            const height = parseFloat(heightInput.value || heightSlider.value) / 100; // Convert to meters
+
+            if (weight > 0 && height > 0) {
+                const bmi = (weight / (height * height)).toFixed(1);
+                bmiNumber.textContent = bmi;
+
+                // Determine category
+                let category, categoryClass, tip;
+                if (bmi < 18.5) {
+                    category = 'Underweight';
+                    categoryClass = 'underweight';
+                    tip = 'Consider a balanced diet with more calories and strength training to build healthy muscle mass.';
+                } else if (bmi >= 18.5 && bmi <= 24.9) {
+                    category = 'Normal Weight';
+                    categoryClass = 'normal';
+                    tip = 'Great! Maintain your current lifestyle with regular exercise and a balanced diet.';
+                } else if (bmi >= 25 && bmi <= 29.9) {
+                    category = 'Overweight';
+                    categoryClass = 'overweight';
+                    tip = 'Focus on cardiovascular exercises and a calorie-controlled diet to reach a healthier weight.';
+                } else if (bmi >= 30 && bmi <= 34.9) {
+                    category = 'Obese Class I';
+                    categoryClass = 'obese1';
+                    tip = 'Consult with our trainers for a personalized weight loss program combining diet and exercise.';
+                } else if (bmi >= 35 && bmi <= 39.9) {
+                    category = 'Obese Class II';
+                    categoryClass = 'obese2';
+                    tip = 'We recommend professional guidance with structured diet and exercise plans for sustainable weight loss.';
+                } else {
+                    category = 'Obese Class III';
+                    categoryClass = 'obese3';
+                    tip = 'Please consult with healthcare professionals along with our specialized training programs.';
+                }
+
+                categoryBadge.textContent = category;
+                categoryBadge.className = 'category-badge ' + categoryClass;
+                fitnessTip.textContent = tip;
+
+                // Calculate ideal weight range (BMI 18.5 - 24.9)
+                const minWeight = (18.5 * height * height).toFixed(1);
+                const maxWeight = (24.9 * height * height).toFixed(1);
+                idealWeight.textContent = minWeight + ' - ' + maxWeight + ' kg';
+
+                // Show result
+                bmiResult.style.display = 'block';
+                bmiResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+                alert('Please enter valid weight and height values.');
+            }
+        });
+
+        // Clear inputs
+        clearBtn.addEventListener('click', function() {
+            weightInput.value = '';
+            heightInput.value = '';
+            weightSlider.value = 70;
+            heightSlider.value = 170;
+            weightValue.textContent = '70 kg';
+            heightValue.textContent = '170 cm';
+            bmiResult.style.display = 'none';
+        });
+
+
+    </script>
+</body>
+</html>
